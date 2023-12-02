@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AdventOfCode
+namespace AdventOfCode.Solutions
 {
     public class Day1
     {
@@ -21,7 +21,7 @@ namespace AdventOfCode
                 {
                     char[] num = { numbersOnly[0], numbersOnly[^1] };
                     string currentCalibration = new string(num);
-                    currentSum += Int32.Parse(currentCalibration);
+                    currentSum += int.Parse(currentCalibration);
                 }
             }
             return currentSum;
@@ -104,7 +104,7 @@ namespace AdventOfCode
                         }
                     }
                 }
-                currentSum += Int32.Parse(first_digit + last_digit);
+                currentSum += int.Parse(first_digit + last_digit);
             }
 
             return currentSum;
